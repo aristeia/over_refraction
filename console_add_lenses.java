@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import java.lang.Math;
 
+//@author Jon Sims
+//@version 1.0
 public class console_add_lenses {
     public static void main(String args[]) {
 	Scanner reader = new Scanner(System.in);
