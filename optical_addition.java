@@ -1,13 +1,13 @@
 import java.lang.Math;
 
 
-/*! \mainpage
+/**
  * This set of code is used to calculate the sum of two spherical lenses
  * and cylinders. This is useful for fighting glasses. The patients old
  * perscprition is the first sphere, cylinder and axis. The patient
  * wears the glasses while being refracted. The results from the phoropter
  * are the second set of sphere, cylinder and axis. The new perscription
- * is the sum of these lenses. <br/>
+ * is the sum of these lenses. <br>
  *
  * This technique of refraction is more accurate than doing a new refraction
  * using the phoropter. When lenses are put into glasses, and the paient wears
@@ -15,14 +15,14 @@ import java.lang.Math;
  * inaccurate. The glasses are closer to the patient's eye. The combination
  * of the corrective lense, and the lense of the eye can be viewed as a
  * coumpound lense system. The power of the compound lense system is a
- * of the distance between the two lenses: <br/>
- *<br/>
- * Pcombined = 1 / Fcombined = 1 / F1 - 1 / (d - F2) <br/>
- * <br/>
+ * of the distance between the two lenses: <br>
+ *<br>
+ * Pcombined = 1 / Fcombined = 1 / F1 - 1 / (d - F2) <br>
+ * <br>
  * Here is a nice article about <a
 href="http://www.colorado.edu/physics/phys1230/phys1230_fa01/topic27.html">
 compound lense systems </a>.
- *<br/>
+ *<br>
  *
  * A patient typically wears his glasses at an angle, and the thinest point
  * of lenses is typically not directly in front of the pupil. The lense
@@ -30,12 +30,12 @@ compound lense systems </a>.
  * The lense was ground with the approximation, that there was 0 distance
  * betwene the front and rear lense, but this is not true, and the true
  * distance is a function of the style of the glasses, and how the patient
- * wears the glasses.<br/>
+ * wears the glasses.<br>
  *
  * Therefore, by adding a small correction to the existing glasses,
  * the new perscpription largely compensates for the two systematic errors
  * just mentioned. Therefore overrefraction is more accurate than
- * a simple refraction.<br/>
+ * a simple refraction.<br>
  *
  * The algorithm for adding two sets of spheres and cylinders is as follows.
  * <ol>
