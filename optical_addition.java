@@ -109,7 +109,8 @@ public class optical_addition{
     protected double sphere_c;
     protected double axis_c;
 
-    //clears internal attributes
+    /** clears internal attributes
+     */
     public void clear() {
       sphere_a = 0;
       cylinder_a = 0;
@@ -126,7 +127,8 @@ public class optical_addition{
     }
 
 
-    // add_lense() calculates values for alpha, cylinder_c, gamma, Scyl, sphere_c, and axis_c
+    /** add_lense() calculates values for alpha, cylinder_c, gamma, Scyl, sphere_c, and axis_c
+     */
     public void add_lenses() {
 	Double a_s = new Double(sphere_a);
 	Double a_c = new Double(cylinder_a);
@@ -184,8 +186,8 @@ public class optical_addition{
     }
 
 
-    /* Constructor
-       @param rhs optical_addition object whose internal attributes are used for this class' internal attributes
+    /** Constructor taking an optical addition object, not generating anything
+     * @param rhs optical_addition object whose internal attributes are used for this class' internal attributes
     */
     public optical_addition( optical_addition rhs) {
 	sphere_a = rhs.get_sphere_a();
@@ -202,13 +204,13 @@ public class optical_addition{
 	axis_c = rhs.get_axis_c();
     }
 
-    /* Constructor
-       @param Sphere_a sets internal sphere_a
-       @param Cylinder_a sets internal cylinder_a
-       @param Axis_a sets internal axis_a
-       @param Sphere_b sets internal sphere_a
-       @param Cylinder_b sets internal cylinder_b
-       @param Axis_b sets internal axis_b
+    /** Constructor taking attributes as arguments, then using those to generate additional attributes
+     * @param Sphere_a sets internal sphere_a
+     * @param Cylinder_a sets internal cylinder_a
+     * @param Axis_a sets internal axis_a
+     * @param Sphere_b sets internal sphere_a
+     * @param Cylinder_b sets internal cylinder_b
+     * @param Axis_b sets internal axis_b
     */	
     public optical_addition(
 			    double Sphere_a,
@@ -244,10 +246,10 @@ public class optical_addition{
     double get_axis_c() { return axis_c;}
 
 
-    /* normalize normalizes the input variables
-       @param sphere a double object representing one of the sphere primatives
-       @param cylinder a double object representing one of the cylinder primatives
-       @param axis a double object representing one of the axis primatives
+    /** normalize normalizes the input variables
+     * @param sphere a double object representing one of the sphere primatives
+     * @param cylinder a double object representing one of the cylinder primatives
+     * @param theta a double object representing one of the axis primatives
     */
     private void normalize( Double sphere, Double cylinder, Double theta) {
 	if (cylinder >= 0) {
